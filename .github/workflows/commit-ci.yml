@@ -39,7 +39,8 @@ jobs:
 
       - name: Code style lint
         shell: bash
-        run: ./clang-format.sh -i
+        # run: ./clang-format.sh -i
+        run : ./clang-format.sh -n
 
       - name: Configure build environment
         shell: bash
