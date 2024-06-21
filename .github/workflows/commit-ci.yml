@@ -34,7 +34,8 @@ jobs:
 
       - name: Install llvm
         if: steps.cache-llvm.outputs.cache-hit != 'true'
-        run: choco install llvm --version=17.0.6
+        # run: choco install llvm --version=17.0.6
+        run: choco install llvm
 
       - name: Code style lint
         shell: bash
